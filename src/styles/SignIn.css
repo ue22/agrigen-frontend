@@ -1,0 +1,76 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.signin-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    min-width: 100vw;
+    background-image: url('C:\Users\chetraj\Desktop\AGRIGEN FORNTEND\agrigen-frontend\src\asset\plantImage.jpg');
+    background-repeat: no-repeat;
+    background-position: right bottom; 
+    background-repeat: no-repeat;
+}
+
+.signin-box {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+.signin-box h2 {
+    margin-bottom: 1rem;
+    color: #ff6600;
+}
+
+.signin-box label {
+    display: block;
+    text-align: left;
+    margin-bottom: 5px;
+    color: #333;
+    font-weight: bold;
+}
+
+.signin-box input {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0 20px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.login-button, .forgot-password-button {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    background-color: #ff6600;
+    color: white;
+    cursor: pointer;
+}
+
+.login-button:hover {
+    background-color: #e65500;
+}
+
+.forgot-password-button {
+    background-color: transparent;
+    color: #ff6600;
+    text-decoration: none;
+    display: block;
+    margin-top: 1rem;
+}
+
+.forgot-password-button:hover {
+    text-decoration: underline;
+}
