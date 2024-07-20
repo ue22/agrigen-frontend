@@ -2,6 +2,7 @@
 import React, { Component } from 'react';
 import CanvasJSReact from '@canvasjs/react-charts';
 
+
 //var CanvasJSReact = require('@canvasjs/react-charts');
  
 var CanvasJS = CanvasJSReact.CanvasJS;
@@ -10,9 +11,6 @@ class Piechart extends Component {
 	render() {
 		const options = {
 			animationEnabled: true,
-			title: {
-				text: "Customer Satisfaction"
-			},
 			subtitles: [{
 				text: "71% Positive",
 				verticalAlign: "center",
@@ -25,16 +23,13 @@ class Piechart extends Component {
 				indexLabel: "{name}: {y}",
 				yValueFormatString: "#,###'%'",
 				dataPoints: [
-					{ name: "Unsatisfied", y: 5 },
-					{ name: "Very Unsatisfied", y: 31 },
-					{ name: "Very Satisfied", y: 40 },
-					{ name: "Satisfied", y: 17 },
-					{ name: "Neutral", y: 7 }
+					{ name: "Plot A", y: 5 },
+					{ name: "Plot B", y: 31 },
 				]
 			}]
 		}
 		return (
-		<div>
+		<div className="piechart-data">
 			<CanvasJSChart options = {options}
 				/* onRef={ref => this.chart = ref} */
 			/>

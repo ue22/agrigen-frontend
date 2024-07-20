@@ -37,25 +37,27 @@ function Dashboard() {
         <div className="dashboard-container">
             <header>
                 <nav>
-                    <div className="logo">Agri<span>Gen</span></div>
+                <div className="logo">
+  <img src="src/asset/logo.jpg" alt="AgriGen Logo" />
+</div>
                     <ul>
-                        <li><a href="/HomePage">Home</a></li>
+                     
                         <li><a href="/Dashboard">Dashboard</a></li>
-                        <li><a href="/SignInPage.js">Login</a></li>
+                       
                     </ul>
                 </nav>
             </header>
 
             <div className="dashboard" ref={dashboardRef}>
                 <div className="crop-details">
-                    <h2>Crop Details</h2>
+                    <h2 className="h2style">Crop Details</h2>
                     <div className="crop-info">
                         <div className="crop-environment">
 
                         </div>
                         <div className="crop-images">
                             <Button type="primary" onClick={showModal} className="image-placeholder">
-                                +
+                                <span>+</span>
                             </Button>
                             <Button type="primary" onClick={showModal} className="image-placeholder">
                                 +
@@ -84,25 +86,27 @@ function Dashboard() {
                                 +
                             </Button>
 
-                            <Modal title="Basic Modal" open={isModalOpen} onOk={handleOk} onCancel={handleCancel}>
-                                <p>Possible toxic environment</p>
-                                <p>water absorption</p>
-                                <p></p>
+                            <Modal title="No Device Installed" open={isModalOpen} onOk={handleOk} onCancel={handleCancel}>
+                                <p>Need to install device to access new plot</p>
                             </Modal>
                         </div>
                     </div>
                 </div>
                 <div className="reporting">
-                    <h2 className="reporting-title">Reporting</h2>
-                    <div className="report-section">
-                        <h3>Yield Growth</h3>
-                        <Piechart />
-                    </div>
-                    <div className="report-section">
-                        <h3>Historical Data</h3>
-                        <Linechart />
-                    </div>
                     <button onClick={handleDownloadPdf} className="download-button">Download PDF</button>
+
+                    <div className="report-section">
+                        <h3 className="h3style">Yield Growth</h3>
+                        <div className="piechart-style">
+                            <Piechart />
+                        </div>
+                    </div>
+                    <div className="report-section">
+                        <h3 className="h3style">Historical Data</h3>
+                        <div className="linechart-style">
+                            <Linechart />
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
