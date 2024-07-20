@@ -7,7 +7,7 @@ const Register = () => {
 
     const handleSignIn = (e) => {
         e.preventDefault();
-      
+
     };
 
     return (
@@ -26,7 +26,7 @@ const Register = () => {
                         required
                     />
                     <div className="terms-container">
-                        <input type="checkbox" id="terms" name="terms" required />
+                        <input type="checkbox" id="terms" name="terms" required style="width: 17%;" />
                         <label htmlFor="terms" className="terms-label">Do you agree to terms and conditions?</label>
                     </div>
                     <button type="submit" className="login-button">Register</button>

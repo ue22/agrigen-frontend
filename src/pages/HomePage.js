@@ -4,13 +4,13 @@ import '../styles/home.css';
 const HomePage = () => {
     return (
         <div>
-            <header>
+             <header>
                 <nav>
-                    <div className="logo">Shield<span>Harvest</span></div>
+                    <div className="logo">Agri<span>Gen</span></div>
                     <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#about">About Us</a></li>
-                        <li><a href="#login">Login</a></li>
+                        <li><a href="/HomePage">Home</a></li>
+                        <li><a href="/Dashboard">Dashboard</a></li>
+                        <li><a href="/pages/SignInPage.js">Login</a></li>
                     </ul>
                 </nav>
             </header>

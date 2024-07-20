@@ -63,3 +63,8 @@ body, html {
     background-color: #e65500;
 }
 
+.terms-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

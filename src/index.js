@@ -6,12 +6,13 @@ import SignInPage from './pages/SignInPage';
 import HomePage from './pages/HomePage';
 import Register from './pages/Register';
 import Dashboard from './pages/Dashboard';
+import TodoDetails from './pages/TodoDetails';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     
-    <SignInPage/>
+    <Dashboard/>
 
   </React.StrictMode>
   
