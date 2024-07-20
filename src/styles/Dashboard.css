@@ -21,9 +21,8 @@ nav {
 }
 
 nav .logo {
-
-  display: flex;
-  align-items: center;
+  font-size: 1.5em;
+  font-weight: bold;
 }
 
 nav .logo span {
@@ -48,6 +47,12 @@ nav ul li a {
   gap: 20px;
   padding: 2rem;
   height: 100vh;
+}
+.vertical-line {
+  width: 1px;
+  background-color: black;
+  height: 100px; /* Adjust based on your needs */
+  margin-right: 10px;
 }
 
 .crop-details,
@@ -214,4 +219,25 @@ nav ul li a {
   .report-section {
     margin-bottom: 10px;
   }
+}
+.button-container {
+  display: flex;
+  padding: 5px;
+  width: 350px;
+  align-items: center;
+}
+.button-container .label {
+  font-size: 2em;
+  margin-right: 20px;
+}
+.button-container .details {
+  flex-grow: 1;
+}
+.button-container .details div {
+  margin-bottom: 5px;
+}
+.details{
+  color: grey;
+  font-size: 17px;
+  text-align: left;
 }

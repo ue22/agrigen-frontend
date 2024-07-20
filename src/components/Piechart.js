@@ -2,11 +2,9 @@
 import React, { Component } from 'react';
 import CanvasJSReact from '@canvasjs/react-charts';
 
-
-//var CanvasJSReact = require('@canvasjs/react-charts');
- 
 var CanvasJS = CanvasJSReact.CanvasJS;
 var CanvasJSChart = CanvasJSReact.CanvasJSChart;
+
 class Piechart extends Component {
 	render() {
 		const options = {
@@ -23,19 +21,20 @@ class Piechart extends Component {
 				indexLabel: "{name}: {y}",
 				yValueFormatString: "#,###'%'",
 				dataPoints: [
-					{ name: "Plot A", y: 5 },
-					{ name: "Plot B", y: 31 },
+					{ name: "Plot A", y: 5, color: "#d3d3d3" },  // Grey color
+					{ name: "Plot B", y: 31, color: "#90EE90" },  // Green color
 				]
 			}]
 		}
 		return (
 		<div className="piechart-data">
-			<CanvasJSChart options = {options}
-				/* onRef={ref => this.chart = ref} */
+			<CanvasJSChart options={options}
+				
 			/>
-			{/*You can get reference to the chart instance as shown above using onRef. This allows you to access all chart properties and methods*/}
+			{/* */}
 		</div>
 		);
 	}
 }
-export default Piechart; 
+
+export default Piechart;
